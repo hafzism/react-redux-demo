@@ -26,11 +26,11 @@ export default function TaskList(){
       {tasks.map(task => (
         <div key={task.id}>
 
-          {/* <span
+          <span
             onClick={()=>dispatch(toggleTask(task.id))}
           >
             {task.text}
-          </span> */}
+          </span>
 
           <button
             onClick={()=>dispatch(deleteTask(task.id))}
